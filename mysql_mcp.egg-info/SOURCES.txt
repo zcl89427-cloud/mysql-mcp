@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+mysql_mcp/__init__.py
+mysql_mcp/config.py
+mysql_mcp/core.py
+mysql_mcp/server.py
+mysql_mcp.egg-info/PKG-INFO
+mysql_mcp.egg-info/SOURCES.txt
+mysql_mcp.egg-info/dependency_links.txt
+mysql_mcp.egg-info/entry_points.txt
+mysql_mcp.egg-info/requires.txt
+mysql_mcp.egg-info/top_level.txt
+tests/test_core.py

@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mysql-mcp"
+version = "0.1.0"
+description = "A local MCP server for querying MySQL over stdio."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "mcp[cli]>=1.0.0,<2.0.0",
+    "PyMySQL>=1.1.0,<2.0.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0.0,<9.0.0"]
+
+[project.scripts]
+mysql-mcp = "mysql_mcp.server:main"
+
+[tool.setuptools.packages.find]
+include = ["mysql_mcp*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
