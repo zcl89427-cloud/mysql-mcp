@@ -1,5 +1,10 @@
 .env
+.venv/
+.uv-cache/
 .pytest_cache/
 __pycache__/
 *.pyc
 .idea
+*.egg-info/
+dist/
+build/

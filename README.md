@@ -34,6 +34,21 @@
 
 ## 安装
 
+推荐使用 `uv` 管理虚拟环境和依赖：
+
+```powershell
+uv venv
+uv pip install -e ".[dev]"
+```
+
+如果本机还没有安装 `uv`，可以先安装：
+
+```powershell
+pip install uv
+```
+
+也可以继续使用传统 `pip`：
+
 ```powershell
 pip install -e .
 ```
@@ -45,6 +60,12 @@ pip install -e .[dev]
 ```
 
 ## 启动
+
+```powershell
+uv run mysql-mcp
+```
+
+或者：
 
 ```powershell
 mysql-mcp
@@ -109,6 +130,12 @@ Windows 本地可以直接把虚拟环境解释器配置成 MCP 命令：
 ```
 
 ## 测试
+
+```powershell
+uv run pytest
+```
+
+或者：
 
 ```powershell
 pytest
